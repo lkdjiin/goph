@@ -5,7 +5,7 @@
   ],
   "description": "A Gopher client",
   "copyright": "Copyright © 2018, xavier",
-  "license": "TBD",
+  "license": "GPLv3",
   "targetType": "executable",
   "targetPath": "bin",
   "dependencies": {

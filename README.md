@@ -22,3 +22,7 @@ And please, don't forget: there will be bugs…
 - No timeout
 - Can't choose the path to save text files
 - And many more
+
+## LICENSE
+
+GPLv3

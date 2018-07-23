@@ -13,3 +13,4 @@ goph-test-*
 *.obj
 *.lst
 bin/*
+TODO*

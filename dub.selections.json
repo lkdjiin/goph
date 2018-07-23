@@ -1,0 +1,7 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"ncurses": "~master",
+		"unit-threaded": "0.7.46"
+	}
+}

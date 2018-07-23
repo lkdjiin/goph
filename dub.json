@@ -1,0 +1,27 @@
+{
+  "name": "goph",
+  "authors": [
+    "xavier nayrac"
+  ],
+  "description": "A Gopher client",
+  "copyright": "Copyright © 2018, xavier",
+  "license": "TBD",
+  "targetType": "executable",
+  "targetPath": "bin",
+  "dependencies": {
+    "ncurses": "*"
+  },
+  "configurations": [
+    { "name": "executable" },
+    {
+      "name": "unittest",
+      "targetType": "executable",
+      "preBuildCommands": ["dub run unit-threaded -c gen_ut_main -- -f bin/ut.d"],
+      "mainSourceFile": "bin/ut.d",
+      "excludedSourceFiles": ["source/app.d"],
+      "dependencies": {
+        "unit-threaded": "*"
+      }
+    }
+  ]
+}

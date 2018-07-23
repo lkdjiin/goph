@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+goph.so
+goph.dylib
+goph.dll
+goph.a
+goph.lib
+goph-test-*
+*.exe
+*.o
+*.obj
+*.lst
+bin/*

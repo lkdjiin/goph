@@ -28,7 +28,6 @@ struct Formatter
         WINDOW* mainWindow = newwin(LINES - 4, COLS, 2, 0);
         displayHeader(document, depth);
         mvwprintw(mainWindow, 0, 0, toStringz(document.take(LINES - 4)));
-        /* writeln("\n(s to save this document)"); */
         wrefresh(mainWindow);
         refresh;
         delwin(mainWindow);
@@ -39,7 +38,6 @@ struct Formatter
         WINDOW* mainWindow = newwin(LINES - 4, COLS, 2, 0);
         displayHeader(document, depth);
         mvwprintw(mainWindow, 0, 0, toStringz(document.take(LINES - 4)));
-        /* writeln("\n(s to save this document)"); */
         wrefresh(mainWindow);
         refresh;
         delwin(mainWindow);

@@ -146,8 +146,8 @@ struct Session
         File f = File(textFile.filename, "w");
         f.write(textFile.text);
         f.close();
-        // TODO Adapt to ncurses.
-        writeln("File saved.");
+
+        Formatter.displayMessage("File saved.");
     }
 
     string userChoice()

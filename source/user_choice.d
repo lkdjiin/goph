@@ -32,7 +32,7 @@ class UserChoice
         {
             temp = c.to!char;
             if (temp == 'q' || temp == 'b' || temp == 'n' || temp == 'p'
-                    || temp == '?')
+                    || temp == '?' || temp == 's')
             {
                 result ~= format("%c", c.to!char);
                 break;

@@ -66,4 +66,16 @@ struct Formatter
         wrefresh(headerWindow);
         delwin(headerWindow);
     }
+
+    static void displayMessage(in string message)
+    {
+        // Temporarily quit the curses mode.
+        // TODO Do it with curses.
+        def_prog_mode();
+        endwin();
+        writeln(message ~ " Type `Enter` to continue…");
+        auto line = readln();
+        reset_prog_mode();
+        refresh();
+    }
 }
